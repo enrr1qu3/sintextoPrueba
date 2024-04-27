@@ -3,55 +3,84 @@ import { getAdvertisementShort, getFrontPageLayoutPublished, getNewsSection, get
 import { IAdvertisement, IFrontPageLayout, INewsArticle, INewsSection, ISocialMediaArticle } from "@/interfaces";
 import styles from './page.module.scss';
 
-import { baseUrl } from '../services/global';
+// // Obtiene el ForontPageLayout actualmente publicado
+// const getFrontPageLayout = async () => {
+//     const response = await getFrontPageLayoutPublished();    
+//     return response.data;
+// }
 
-// Obtiene el ForontPageLayout actualmente publicado
-const getFrontPageLayout = async () => {
-    // const response = await getFrontPageLayoutPublished();    
-    // return response.data;
+// // Obtiene las últimas noticias aprobadas
+// const getLatestNews = async () => {
+//     const response = await getUltimateFiveNewsArticleApproved();
+//     return response.data;
+// }
 
-    const response = await fetch(`${baseUrl}/FrontPageLayout/UltimateFrontPageLayoutPublished`, {
-        cache: 'force-cache',
-        next: {
-          revalidate: 2000
+// // Obtiene los artículos por cada sección que haya en el FrontPageLayout
+// const getSectionsHome = async (idSections: any) => {
+//     const response = await getNewsSection(idSections);
+//     return response.data;
+// }
+
+// // Obtiene los artículos de las redes sociales
+// const getSocialNetworkArticles = async () => {
+//     const response = await getSocialMediaArticles();
+//     return response.data;
+// }
+
+// // Obtiene los anuncios
+// const getAdvertisements = async () => {
+//     const response = await getAdvertisementShort(undefined, 'Carousel');
+//     return response.data;
+// }
+
+export async function getServerSideProps() {
+    // Obtiene el FrontPageLayout actualmente publicado
+    const layoutResponse = await getFrontPageLayoutPublished();
+    const layout = layoutResponse.data;
+
+    // Obtiene las últimas noticias aprobadas
+    const lastArticlesResponse = await getUltimateFiveNewsArticleApproved();
+    const lastArticles = lastArticlesResponse.data;
+
+    // Obtiene los artículos por cada sección que haya en el FrontPageLayout
+    const sectionsResponse = await getNewsSection(layout.newsSections);
+    const sections = sectionsResponse.data;
+
+    // Obtiene los artículos de las redes sociales
+    const socialMediaArticlesResponse = await getSocialMediaArticles();
+    const socialMediaArticles = socialMediaArticlesResponse.data;
+
+    // Obtiene los anuncios
+    const adsCarouselResponse = await getAdvertisementShort(undefined, 'Carousel');
+    const adsCarousel = adsCarouselResponse.data;
+
+    return {
+        props: { // Los datos se pasan al componente como props
+            layout,
+            socialMediaArticles,
+            lastArticles,
+            sections,
+            adsCarousel
         }
-    }).then(resp => resp.json());
-
-    console.log('response revalidate ---> ', response);
-
-    return response.data;
+    };
 }
 
-// Obtiene las últimas noticias aprobadas
-const getLatestNews = async () => {
-    const response = await getUltimateFiveNewsArticleApproved();
-    return response.data;
+interface HomeProps {
+    layout: IFrontPageLayout;
+    socialMediaArticles: ISocialMediaArticle[];
+    lastArticles: INewsArticle[];
+    sections: INewsSection[];
+    adsCarousel: IAdvertisement[];
 }
 
-// Obtiene los artículos por cada sección que haya en el FrontPageLayout
-const getSectionsHome = async (idSections: any) => {
-    const response = await getNewsSection(idSections);
-    return response.data;
-}
+export default async function HomePage(props: HomeProps) {
+    // const layout: IFrontPageLayout = await getFrontPageLayout(); 
+    // const socialMediaArticles: ISocialMediaArticle[] = await getSocialNetworkArticles();
+    // const lastArticles: INewsArticle[] = await getLatestNews();
+    // const sections: INewsSection[] = await getSectionsHome(layout.newsSections);
+    // const adsCarousel: IAdvertisement[] = await getAdvertisements();
 
-// Obtiene los artículos de las redes sociales
-const getSocialNetworkArticles = async () => {
-    const response = await getSocialMediaArticles();
-    return response.data;
-}
-
-// Obtiene los anuncios
-const getAdvertisements = async () => {
-    const response = await getAdvertisementShort(undefined, 'Carousel');
-    return response.data;
-}
-
-export default async function HomePage() {
-    const layout: IFrontPageLayout = await getFrontPageLayout(); 
-    const socialMediaArticles: ISocialMediaArticle[] = await getSocialNetworkArticles();
-    const lastArticles: INewsArticle[] = await getLatestNews();
-    const sections: INewsSection[] = await getSectionsHome(layout.newsSections);
-    const adsCarousel: IAdvertisement[] = await getAdvertisements();
+    const { layout, socialMediaArticles, lastArticles, sections, adsCarousel } = props;
 
     return (
         <>
@@ -60,8 +89,6 @@ export default async function HomePage() {
                 mainArticleBannerUrl={ layout?.mainArticleBannerFilePathUrl }
                 mainArticleURLTitle={ layout?.mainArticleURLTitle } 
             />
-
-            <p>LOADING:  { JSON.stringify(layout) }</p>
             
             <Carousel articles={ layout?.naTopBannersArticle } advertisements={ adsCarousel } />
             
