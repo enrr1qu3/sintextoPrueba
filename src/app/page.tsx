@@ -17,6 +17,8 @@ const getFrontPageLayout = async () => {
         }
     }).then(resp => resp.json());
 
+    console.log('response revalidate ---> ', response);
+
     return response.data;
 }
 
@@ -58,6 +60,8 @@ export default async function HomePage() {
                 mainArticleBannerUrl={ layout?.mainArticleBannerFilePathUrl }
                 mainArticleURLTitle={ layout?.mainArticleURLTitle } 
             />
+
+            <p>LOADING:  { JSON.stringify(layout) }</p>
             
             <Carousel articles={ layout?.naTopBannersArticle } advertisements={ adsCarousel } />
             
