@@ -3,9 +3,20 @@ import { getAdvertisementShort, getFrontPageLayoutPublished, getNewsSection, get
 import { IAdvertisement, IFrontPageLayout, INewsArticle, INewsSection, ISocialMediaArticle } from "@/interfaces";
 import styles from './page.module.scss';
 
+import { baseUrl } from '../services/global';
+
 // Obtiene el ForontPageLayout actualmente publicado
 const getFrontPageLayout = async () => {
-    const response = await getFrontPageLayoutPublished();    
+    // const response = await getFrontPageLayoutPublished();    
+    // return response.data;
+
+    const response = await fetch(`${baseUrl}/FrontPageLayout/UltimateFrontPageLayoutPublished`, {
+        cache: 'force-cache',
+        next: {
+          revalidate: 2000
+        }
+    }).then(resp => resp.json());
+
     return response.data;
 }
 
