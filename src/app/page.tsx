@@ -73,7 +73,7 @@ interface HomeProps {
     adsCarousel: IAdvertisement[];
 }
 
-export default async function HomePage(props: HomeProps) {
+export default async function HomePage() {
     // const layout: IFrontPageLayout = await getFrontPageLayout(); 
     // const socialMediaArticles: ISocialMediaArticle[] = await getSocialNetworkArticles();
     // const lastArticles: INewsArticle[] = await getLatestNews();
