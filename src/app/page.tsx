@@ -80,7 +80,13 @@ export default async function HomePage(props: HomeProps) {
     // const sections: INewsSection[] = await getSectionsHome(layout.newsSections);
     // const adsCarousel: IAdvertisement[] = await getAdvertisements();
 
-    const { layout, socialMediaArticles, lastArticles, sections, adsCarousel } = props;
+    const {
+        layout,
+        socialMediaArticles,
+        lastArticles,
+        sections,
+        adsCarousel,
+    } = (await getServerSideProps()).props;
 
     return (
         <>
@@ -113,7 +119,7 @@ export default async function HomePage(props: HomeProps) {
                 <LatestArticles latestArticles={ lastArticles } />
 
                 {
-                    sections?.map((section) => (
+                    sections?.map((section: any) => (
                         <SectionHome
                             key={ section.sectionId }
                             sectionTitle={ section.name }
