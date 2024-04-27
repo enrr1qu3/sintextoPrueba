@@ -1,0 +1,80 @@
+@import "../colors";
+
+.ant-layout-header {
+    padding: 0px !important;
+}
+
+.header {
+    background-color: white;
+    height: auto;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.row-header {
+    height: 100%;
+    align-items: center;
+}
+
+.link-icon {
+    display: inline-flex;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+.img-icon {
+    height: 40px;
+}
+
+.link-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 576px) {
+    .img-icon {
+        display: none;
+    }
+}
+
+@media (max-width: 1155px) {
+    .container-datetime {
+        display: none;
+    }
+}
+
+@media (min-width: 1155px) and (max-width: 1266px) {
+    .datetime {
+        font-size: 14px !important;
+    }
+}
+
+.img-logo {
+    height: 40px;
+}
+
+.datetime {
+    margin: 0 !important;
+}
+
+.column-search {
+    align-items: center;
+    display: flex !important;
+    justify-content: end;
+    padding: 0px 15px;
+
+    .ant-input, .ant-input-affix-wrapper {
+        cursor: pointer !important;
+    }
+
+    .ant-btn {
+        background-color: $color-solid-5 !important;
+    }
+}
+
+.wrap-row-headband {
+    justify-content: center;
+}

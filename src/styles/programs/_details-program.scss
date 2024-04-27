@@ -1,0 +1,17 @@
+@import '../colors';
+
+.btn-social-media-program {
+    background-color: #3E61AF !important;
+    margin: 0px 10px;
+    line-height: inherit !important;
+}
+
+.btn-social-media-program:hover {
+    background-color: $color-solid-4 !important;
+    color: #FFFFFF;
+}
+
+.row-social-media {
+    flex-wrap: nowrap;
+    flex: 1;
+}

@@ -1,0 +1,79 @@
+@import "../colors";
+
+.modal-author {
+    .ant-modal-content {
+        background-color: rgba($color: $color-solid-5, $alpha: 0.95) !important;
+        border-radius: 30px !important;
+    }
+
+    .ant-avatar {
+        border: 5px solid #9D9F9F !important;
+    }
+
+    .ant-modal-close {
+        color: #FFFFFF !important;
+    }
+}
+
+.container-modal-author {
+    text-align: center;
+}
+
+.author-name-link {
+    font-size: 15px;
+    margin: 0px;
+    text-transform: capitalize;
+    padding: 0px;
+    color: #000000 !important;
+    font-weight: bold;
+}
+
+.author-name-link:hover {
+    color: rgba($color: #000000, $alpha: 0.75) !important;
+}
+
+.badge {
+    background-color: #009EB1;
+    border-radius: 25px;
+    color: #FFFFFF;
+    font-family: 'Poppins-SemiBold';
+    font-size: 14px;
+    padding: 0px 10px;
+}
+
+.author-name {
+    font-family: 'Poppins-Bold';
+    color: #009EB1 !important;
+    margin-bottom: 0px !important;
+}
+
+.author-position {
+    color: #FFFFFF !important;
+    font-family: 'Poppins-SemiBold';
+    margin-bottom: 20px !important;
+    margin-top: 0px !important;
+}
+
+.author-description {
+    color: #FFFFFF !important;
+    font-family: 'Poppins-Regular';
+    margin-bottom: 40px !important;
+    padding: 0px 50px;
+    text-align: justify;
+}
+
+.row-social-media-authors {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.btn-social-media-author {
+    background-color: #FFFFFF !important;
+    color: $color-solid-5 !important;
+    margin: 0px 5px !important;
+}
+
+.btn-social-media-author:hover {
+    background-color: rgba($color: #FFFFFF, $alpha: 0.75) !important;
+    color: $color-solid-5 !important;
+}

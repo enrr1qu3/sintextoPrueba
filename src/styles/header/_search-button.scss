@@ -1,0 +1,30 @@
+@import '../colors';
+
+.button-search {
+    background-color: $color-solid-5;
+    margin-right: 15px;
+}
+
+.container-search {
+    margin: 20px 0px 30px;
+}
+
+.ant-modal-title {
+    color: $color-solid-2 !important;
+    font-weight: 700 !important;
+    font-size: 22px !important;
+    text-transform: uppercase;
+}
+
+.custom-input-search {
+    border: 2px solid $color-solid-5 !important;
+    font-size: 18px;
+
+    .ant-input-prefix {
+        color: $color-solid-5;
+    }
+}
+
+.ant-modal-close {
+    color: $color-solid-2 !important;
+}

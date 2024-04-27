@@ -1,0 +1,44 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.ant-layout-header {
+  height: auto !important;
+  background: white !important;
+}
+
+/* Layout style */
+.container-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh !important;
+}
+
+.content-layout {
+  flex: 1;
+}
+
+/* Container */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 25px;
+  padding-left: 25px;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+      max-width: 1140px;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .container {
+      max-width: 1320px;
+  }
+}

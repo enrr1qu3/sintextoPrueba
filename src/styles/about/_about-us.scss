@@ -1,0 +1,68 @@
+@import '../colors';
+
+.container-tabs {
+    margin-top: 20px;
+}
+
+.ant-tabs-content, .ant-tabs-tabpane {
+    .ant-typography{
+        text-align: justify;
+    }
+}
+
+.title-section-tab {
+    font-weight: 600 !important;
+    text-align: center !important;
+    color: $color-solid-5 !important;
+    font-size: 35px !important;
+    margin-top: 0px;
+}
+
+.ant-tabs-tab {
+    background-color: $color-solid-5 !important;
+    font-weight: 600;
+    opacity: 0.4;
+    color: #FFFFFF;
+}
+
+.ant-tabs-tab-active {
+    background-color: $color-solid-5 !important;
+    opacity: 1;
+    color: #FFFFFF !important;
+}
+
+.ant-tabs-tab-btn, .ant-tabs-tab:hover, .ant-tabs-tab-btn:active, .ant-tabs-tab-btn:focus {
+    color: #FFFFFF !important;
+}
+
+// Centra los títulos en el componente "Política de privacidad"
+.text-center {
+    text-align: center !important;
+}
+
+.ant-tabs-nav-list {
+    display: initial !important;
+    white-space: normal !important;
+    text-align: center;
+    border-bottom: 1px solid $color-solid-1;
+    width: 98%;
+}
+
+@media (min-width: 576px) {
+    .ant-tabs-tab {
+        display: flex;
+        flex: 1 !important;
+        justify-content: center;
+        width: 0 !important;    
+        word-wrap: break-word;
+    }
+
+    .ant-tabs-nav-list {
+        display: flex !important;
+        white-space: normal !important;
+    }
+
+    .ant-tabs-content-holder {
+        margin: 0px 30px;
+    }
+}

@@ -1,0 +1,62 @@
+@import "../colors";
+
+.card-article-section-home {
+    background-color: #F5F5F5 !important;
+    border: 0px !important;
+    margin: 25px 0px !important;
+
+    .ant-card-meta-title {
+        margin-bottom: 3px !important;
+        white-space: unset !important;
+    }
+}
+
+.divider-home-section {
+    background-color: #24039c;
+    height: 4px;
+    margin-bottom: 10px !important;
+}
+
+.section-title-home {
+    margin-top: 0;
+    color: $color-solid-2 !important;
+    font-weight: 900 !important;
+    text-transform: uppercase;
+}
+
+.img-article-section {
+    border-radius: 10%;
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+}
+
+.separator {
+    background-color: $color-solid-1 !important;
+    height: 2px !important;
+    margin-bottom: 6px !important;
+    margin-top: 6px !important;
+}
+
+.article-preview-title {
+    margin: 0px !important;
+    color: $color-solid-2 !important;
+    font-weight: 700 !important;
+    font-size: 16px !important;
+}
+
+.article-date {
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    margin: 0px !important;
+    color: #444444 !important;
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+    .img-article-section {
+        width: 110px;
+        height: 110px;
+    }
+}

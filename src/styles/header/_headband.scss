@@ -1,0 +1,108 @@
+.row-headband {
+    display: flex;
+    justify-content: flex-start;
+    max-height: 40px;
+    height: 40px;
+    min-height: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.icon-animated {
+    height: 12px;
+    width: 12px;
+    display: block;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    margin-right: 8px;
+    animation: pulse 1500ms infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: #FFFFFF 0 0 0 0;
+    }
+
+    75% {
+        box-shadow: #ffd4e900 0 0 0 11px;
+    }
+}
+
+.wrap-headband {
+    padding-left: 0;
+    transform: translate(0, 15%);
+    display: flex;
+    margin: 0px;
+
+    .item-headband {
+        list-style: none;
+
+        a {
+            position: relative;
+            display: flex;
+            align-items: center;
+            height: 28px;
+            text-transform: uppercase;
+            padding: 0px 20px;
+            text-decoration: none;
+            color: #262626;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.5s;
+            white-space: nowrap;
+            z-index: 1;
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-top: 2px solid var(--section-color);
+                border-bottom: 2px solid var(--section-color);
+                transform: scaleY(2);
+                opacity: 0;
+                transition: 0.3s;
+                white-space: nowrap;
+
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                top: 2px;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: var(--section-color);
+                transform: scale(0);
+                opacity: 0;
+                transition: 0.3s;
+                z-index: -1;
+                white-space: nowrap;
+
+            }
+
+            &:hover {
+                color: #fff;
+
+                &:before {
+                    transform: scaleY(1);
+                    opacity: 1;
+                }
+
+                &:after {
+                    transform: scaleY(1);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .row-headband {
+        display: none !important;
+    }
+}

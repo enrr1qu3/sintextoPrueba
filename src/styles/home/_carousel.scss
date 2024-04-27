@@ -1,0 +1,88 @@
+@import "../colors";
+
+.container-carousel {
+    margin: 0px 20px;
+    margin-top: 10px;
+}
+
+.col-article-carousel {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+@media (max-width: 484px) {
+    .container-carousel {
+        margin: 0px;
+
+        .swiper {
+            padding: 0 15% !important;
+        }
+    }   
+}
+
+@media (max-width: 576px) {
+    .container-carousel {
+        margin-top: -40px;
+    }
+
+    .autoplay-progress {
+        position: absolute;
+        right: 16px;
+        bottom: 16px;
+        z-index: 10;
+        width: 48px;
+        height: 48px;
+        top: 0;
+        margin-top: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: $color-solid-4;
+    }
+    
+    .autoplay-progress svg {
+        --progress: 0;
+        position: absolute;
+        left: 0;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        stroke-width: 4px;
+        stroke: $color-solid-4;
+        fill: none;
+        stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+        stroke-dasharray: 125.6;
+        transform: rotate(-90deg);
+    }
+}
+
+@media (min-width: 577px) {
+    .autoplay-progress {
+        display: none;
+    }
+}
+
+.swiper-custom-pagination {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.card-ad-carousel {
+    width: 235px;
+    height: 235px;
+    position: relative;
+}
+
+.card-ad-carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.ant-card-body {
+    padding: 0 !important;
+}

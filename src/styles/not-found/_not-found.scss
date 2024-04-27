@@ -1,0 +1,12 @@
+@import '../colors';
+
+.not-found-container {
+    .anticon {
+        color: $color-solid-1 !important;
+        font-size: 100px !important;
+    }
+
+    .btn-home {
+        background-color: $color-solid-5 !important;
+    }
+}

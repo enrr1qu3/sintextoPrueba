@@ -1,0 +1,43 @@
+// .container-home {
+//     margin: 0 12%;
+// }
+
+.divider-ad {
+    color: $color-solid-2 !important;
+    font-weight: 700;
+    margin: 16px auto !important;
+    min-width: 50% !important;
+    text-transform: uppercase;
+    border-block-start: $color-solid-2 !important;
+}
+
+.row-ad {
+    margin-bottom: 80px;
+}
+
+// .container-loading-home {
+//     display: flex;
+//     justify-content: center;
+//     margin-top: 12%;
+    
+//     .anticon-loading  {
+//         color: $color-solid-5;
+//         font-size: 100px;
+//     }
+// }
+
+@media (max-width: 768px) {
+    .container-ad-space {
+        height: 200px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container-ad-space {
+        height: 500px;
+    }
+}
+
+.second-ad {
+    margin-bottom: 45px;
+}

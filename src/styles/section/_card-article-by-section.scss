@@ -1,0 +1,67 @@
+@import "../colors";
+// Poppins-Light     = weight['300']
+// Poppins-Regular   = weight['400']
+// Poppins-Medium    = weight['500']
+// Poppins-SemiBold  = weight['600']
+// Poppins-Bold      = weight['700']
+// Poppins-ExtraBold = weight['800']
+
+.card-article-section {
+    background-color: #FFF !important;
+    border: 0px !important;
+    margin: 25px 0px 0px 0px !important;
+    box-shadow: none !important;
+}
+
+.ant-card-body {
+    padding: 0 !important;
+}
+
+.card-article-section {
+    .ant-card-meta-title {
+        margin-bottom: 3px !important;
+    }
+}
+.article-preview-title {
+    margin: 0px !important;
+    color: $color-solid-2 !important;
+    font-size: 16px !important;
+    text-align: justify !important;
+}
+
+.img-article-section {
+    border-radius: 10%;
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+}
+
+.article-date {
+    font-weight: lighter !important;
+    font-size: 14px !important;
+    margin: 0px !important;
+    color: #444444 !important;
+}
+
+.separator {
+    background-color: $color-solid-1;
+    height: 2px !important;
+    margin-bottom: 10px !important;
+    margin-top: 5px !important;
+}
+
+.article-preview-subtitle {
+    color: $color-solid-1 !important;
+    font-size: 14.5px !important;
+    margin: 0px !important;
+    text-transform: none !important;
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+    .img-article-section {
+        width: 110px;
+        height: 110px;
+    }
+}

@@ -1,0 +1,45 @@
+@import "../colors";
+
+// pertenece a este archivo
+.section-by-article-title {
+  color: #16087a !important;
+  font-weight: 800 !important;
+  word-break: break-word !important;
+  // text-transform: uppercase;
+}
+// pertenece a este archivo
+
+.row-article {
+  margin-bottom: 40px;
+}
+
+.message-empty {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.result-search-text {
+  font-size: 17px;
+  border-left: 5px solid $color-solid-5;
+  padding-left: 5px;
+  width: auto;
+  color: #444444;
+  span {
+    color: #000;
+    font-weight: bold;
+  }
+}
+
+.contenedorVerMas {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.buttonVerMas {
+  background: $color-solid-5 !important;
+  color: #fff !important;
+  width: 100% ;
+  margin: 20px 0 !important;
+}

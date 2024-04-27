@@ -1,0 +1,41 @@
+@import "../colors";
+
+.footer {
+    background-color: $color-solid-1 !important;
+    color: #FFFFFF;
+    font-size: 35px;
+    text-align: center;
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 576px) {
+    .footer {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+}
+
+.row-footer-container {
+    align-items: center;
+}
+
+.icon-social-media {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+    margin: 0px 10px;
+}
+
+.icon-social-media:hover {
+    background-color: $color-solid-4 !important;
+    color: #FFFFFF !important;
+}
+
+.link-footer {
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 14.5px;
+}
+
+a.link-footer:hover {
+    color: $color-solid-4 !important;
+}
