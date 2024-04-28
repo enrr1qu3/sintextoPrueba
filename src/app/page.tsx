@@ -1,5 +1,4 @@
 import { AdvertisementHorizontal, Carousel, LatestArticles, MainArticle, RowSocialNetwork, SectionHome } from "@/components";
-import { getAdvertisementShort, getNewsSection, getSocialMediaArticles, getUltimateFiveNewsArticleApproved } from "@/services";
 import { IAdvertisement, IFrontPageLayout, INewsArticle, INewsSection, ISocialMediaArticle } from "@/interfaces";
 import styles from './page.module.scss';
 import { notFound } from "next/navigation";
@@ -7,11 +6,10 @@ import { notFound } from "next/navigation";
 // Obtiene el ForontPageLayout actualmente publicado
 const getFrontPageLayout = async () => {
     try {
-        const res = await fetch(`https://sintexto-api-dev.azurewebsites.net/api/FrontPageLayout/UltimateFrontPageLayoutPublished`,{
+        // const res = await fetch(`https://sintexto-api-dev.azurewebsites.net/api/FrontPageLayout/UltimateFrontPageLayoutPublished`,{
+        const res = await fetch(`https://sintexto-api-production.azurewebsites.net/api/FrontPageLayout/UltimateFrontPageLayoutPublished`,{
           cache: 'no-store',
-          next: {
-            revalidate: 2
-          }
+
         }).then( resp => resp.json() );
       
         return res.data;
@@ -24,11 +22,10 @@ const getFrontPageLayout = async () => {
 // Obtiene las últimas noticias aprobadas
 const getLatestNews = async () => {
     try {
-        const res = await fetch(`https://sintexto-api-dev.azurewebsites.net/api/NewsArticle/UltimateFiveNewsArticleApproved`,{
+        // const res = await fetch(`https://sintexto-api-dev.azurewebsites.net/api/NewsArticle/UltimateFiveNewsArticleApproved`,{
+        const res = await fetch(`https://sintexto-api-production.azurewebsites.net/api/NewsArticle/UltimateFiveNewsArticleApproved`,{
           cache: 'no-store',
-          next: {
-            revalidate: 2
-          }
+
         }).then( resp => resp.json() );
       
         return res.data;
@@ -44,11 +41,10 @@ const getSectionsHome = async (idSections: any) => {
         const queryParams = '?' + idSections.map((item: any) => {
             return `Sections=${item.id}`
         }).join('&');
-        const res = await fetch(`https://sintexto-api-dev.azurewebsites.net/api//PublicNews/GetSectionNews${queryParams}&OnlyFrontPageNews=true`,{
+        // const res = await fetch(`https://sintexto-api-dev.azurewebsites.net/api/PublicNews/GetSectionNews${queryParams}&OnlyFrontPageNews=true`,{
+        const res = await fetch(`https://sintexto-api-production.azurewebsites.net/api/PublicNews/GetSectionNews${queryParams}&OnlyFrontPageNews=true`,{
           cache: 'no-store',
-          next: {
-            revalidate: 2
-          }
+
         }).then( resp => resp.json() );
       
         return res.data;
@@ -61,11 +57,9 @@ const getSectionsHome = async (idSections: any) => {
 // Obtiene los artículos de las redes sociales
 const getSocialNetworkArticles = async () => {
     try {
-        const res = await fetch(`https://sintexto-api-dev.azurewebsites.net/api/PublicNews/GetSocialMediaArticles`,{
+        // const res = await fetch(`https://sintexto-api-dev.azurewebsites.net/api/PublicNews/GetSocialMediaArticles`,{
+        const res = await fetch(`https://sintexto-api-production.azurewebsites.net/api/PublicNews/GetSocialMediaArticles`,{
           cache: 'no-store',
-          next: {
-            revalidate: 2
-          }
         }).then( resp => resp.json() );
       
         return res.data;
@@ -78,11 +72,10 @@ const getSocialNetworkArticles = async () => {
 // Obtiene los anuncios
 const getAdvertisements = async () => {
     try {
-        const res = await fetch(`https://sintexto-api-dev.azurewebsites.net/api/PublicNews/GetAdvertisementShort?OnlyValidAds=true&position=Carousel`,{
+        // const res = await fetch(`https://sintexto-api-dev.azurewebsites.net/api/PublicNews/GetAdvertisementShort?OnlyValidAds=true&position=Carousel`,{
+        const res = await fetch(`https://sintexto-api-production.azurewebsites.net/api/PublicNews/GetAdvertisementShort?OnlyValidAds=true&position=Carousel`,{
           cache: 'no-store',
-          next: {
-            revalidate: 2
-          }
+
         }).then( resp => resp.json() );
       
         return res.data;
