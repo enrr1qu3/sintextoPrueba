@@ -1,91 +1,50 @@
-import { Col, Row } from "antd";
-import { TitleSectionHeader } from "@/components/section/TituloSectionHeader";
-import { CardAutorArticle, SectionHome, SharingButtons } from "@/components";
-import { CarruselArticleImage } from "@/components/article/CarruselArticleImage";
-import { TextoArticle } from "@/components/article/TextoArticle";
+'use client'
+import { useEffect, useState } from "react";
+import Image from "next/image";
+import ReactPlayer from "react-player";
+interface MediaArticle {
+    id?: number
+    title: string;
+    isVideoArticle?: boolean;
+    contentVideoURL?: string | any;
+    articleBannerImageURL: string;
+}
 
-import "@/styles/article/_article.scss"
-import { ArticleTags } from "@/components/article/ArticleTags";
-import AdvertisementCarousel from "@/components/article/AdvertisementCarousel";
-import { AdvertisementHori } from "@/components/article/AdvertisementHori";
-import dynamic from "next/dynamic";
+export const ContenVideoImg = ({ articleVI }: { articleVI: MediaArticle }) => {
+    const [isClient, setIsClient] = useState(false);
 
-const ContenVideoImg = dynamic(
-    () => import('../../components/article/ContenVideoImg').then((mod) => mod.ContenVideoImg),
-    { ssr: false }
-);
-
-export const Article = (props: any) => {
-    const { article, section, autorInfo,
-        articleBySection, verticalAd, horizontalAD } = props
+    useEffect(() => {
+        // Marcamos que estamos en el cliente después de montar el componente
+        setIsClient(true);
+    }, [articleVI]);
 
     return (
-        <>
-            <TitleSectionHeader title={section.name} color={section.assignedColor} />
-            <Row className="main-row">
-
-                <Col xs={0} lg={3} xl={4}>
-                    <div className="col-ad-left">
-                        {verticalAd?.length! > 0 && <AdvertisementCarousel advertisementV={verticalAd} numberInitial={0} />}
-                        {verticalAd?.length! > 2 && <AdvertisementCarousel advertisementV={verticalAd} numberInitial={2} />}
+        <div>
+            {isClient && (
+                // articleVI.isVideoArticle && articleVI.contentVideoURL ?
+                articleVI.isVideoArticle && articleVI.contentVideoURL != '' && articleVI.contentVideoURL != null
+                    ?
+                    <div className="container-video">
+                        <ReactPlayer
+                            url={articleVI.contentVideoURL}
+                            controls
+                            playing
+                            muted
+                            width="100%"
+                            height="100%"
+                        />
                     </div>
-                </Col>
-
-                <Col xs={24} lg={18} xl={16}>
-                    <div className="container">
-                        <Row>
-                            <Col xs={24} md={24}>
-                                <div className="container-article">
-                                    {/* carta y compartir */}
-                                    <Row gutter={[0, 30]} justify="space-between">
-                                        <CardAutorArticle authors={autorInfo} fecha={article.schedulePostDate} />
-                                        <SharingButtons title={article.title} />
-                                    </Row>
-                                    {/* carta y compartir fin */}
-
-                                    {/* informacion */}
-
-                                    <h2 className="article-title">{article.title}</h2>
-
-                                    <h4 className="article-subtitle">{article.subtitle}</h4>
-
-                                    {/* <ContenVideoImg articleVI={article} /> */}
-
-                                    <p className="subtitle-video" key={"imagenes"}>
-                                        {article.subtitleVideo}
-                                    </p>
-
-                                    <TextoArticle texto={article.content} />
-                                    {/* informacion fin */}
-                                    {
-                                        article.imagesOfArticles?.length > 0 && <CarruselArticleImage imagenesArticle={article.imagesOfArticles} />
-                                    }
-
-                                    <Col xs={24}>
-                                        <ArticleTags tags={article.newsTags} />
-                                    </Col>
-                                    {/* publicidad horizontal */}
-                                    {horizontalAD?.length > 0 && <AdvertisementHori advertisementH={horizontalAD} />}
-                                    {/* publicidad horizontal */}
-                                </div>
-                            </Col>
-                        </Row>
-                    </div>
-                </Col>
-
-                <Col xs={0} lg={3} xl={4}>
-                    <div className="col-ad-right">
-                        {verticalAd?.length! > 1 && <AdvertisementCarousel advertisementV={verticalAd} numberInitial={1} />}
-                        {verticalAd?.length! > 3 && <AdvertisementCarousel advertisementV={verticalAd} numberInitial={3} />}
-                    </div>
-                </Col>
-
-            </Row >
-
-            {/* articulos relacionados */}
-            <div className="container" >
-                <SectionHome sectionTitle="Artículos relacionados" articles={articleBySection} />
-            </div >
-        </>
+                    :
+                    <Image
+                        key={articleVI.id}
+                        src={articleVI.articleBannerImageURL}
+                        alt={articleVI.title}
+                        width={1080}
+                        height={800}
+                        style={{ width: "100%", height: "auto" }}
+                    />
+            )
+            }
+        </div>
     )
 }
