@@ -1,23 +1,7 @@
 import { Col, Row } from "antd";
-import { TitleSectionHeader } from "@/components/section/TituloSectionHeader";
-import { CardAutorArticle, SectionHome, SharingButtons } from "@/components";
-import { CarruselArticleImage } from "@/components/article/CarruselArticleImage";
-import { TextoArticle } from "@/components/article/TextoArticle";
-
 import "@/styles/article/_article.scss"
-import { ArticleTags } from "@/components/article/ArticleTags";
-import AdvertisementCarousel from "@/components/article/AdvertisementCarousel";
-import { AdvertisementHori } from "@/components/article/AdvertisementHori";
-import dynamic from "next/dynamic";
-
-const ContenVideoImg = dynamic(
-    () => import('../../components/article/ContenVideoImg').then((mod) => mod.ContenVideoImg),
-    { ssr: false }
-);
-
 export const Article = (props: any) => {
-    const { article, section, autorInfo,
-        articleBySection, verticalAd, horizontalAD } = props
+    const { article} = props
 
     return (
         <>
