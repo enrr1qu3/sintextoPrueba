@@ -53,7 +53,14 @@ export const getNewsSection = async (idSections: any) => {
             return `Sections=${item.id}`
         }).join('&');
 
-        const response = await axiosInstance.get(`/PublicNews/GetSectionNews${queryParams}&OnlyFrontPageNews=true`, headers);
+        const response = await axiosInstance.get(`/PublicNews/GetSectionNews${queryParams}&OnlyFrontPageNews=true`, {
+            // query URL without using browser cache
+            headers: {
+              'Cache-Control': 'no-cache',
+              'Pragma': 'no-cache',
+              'Expires': '0',
+            },
+        });
         if (response.status !== 200) {
             throw new Error('Error en la petición');
         }
@@ -119,7 +126,14 @@ export const getSearch = async (params?: { NameSearch?: string, PageSize?:number
 
 export const getSocialMediaArticles = async () => {
     try {
-        const response = await axiosInstance.get('/PublicNews/GetSocialMediaArticles', headers);
+        const response = await axiosInstance.get('/PublicNews/GetSocialMediaArticles', {
+            // query URL without using browser cache
+            headers: {
+              'Cache-Control': 'no-cache',
+              'Pragma': 'no-cache',
+              'Expires': '0',
+            },
+        });
         if (response.status !== 200) {
             throw new Error('Error en la petición');
         }
@@ -157,7 +171,14 @@ export const getAdvertisementShort = async (relevance?: boolean, position?: stri
             queryParams += `&SectionId=${sectionId}`;
         }
         
-        const response = await axiosInstance.get(`/PublicNews/GetAdvertisementShort?OnlyValidAds=true${queryParams}`, headers);
+        const response = await axiosInstance.get(`/PublicNews/GetAdvertisementShort?OnlyValidAds=true${queryParams}`, {
+            // query URL without using browser cache
+            headers: {
+              'Cache-Control': 'no-cache',
+              'Pragma': 'no-cache',
+              'Expires': '0',
+            },
+        });
         if (response.status !== 200) {
             throw new Error('Error en la petición');
         }
