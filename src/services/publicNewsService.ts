@@ -1,4 +1,5 @@
 import { axiosInstance } from "./axios";
+import { headers } from "./headers-cache";
 
 const getQueryStringParams = (params: Object) => {
     return '?' + Object.entries(params)
@@ -52,7 +53,7 @@ export const getNewsSection = async (idSections: any) => {
             return `Sections=${item.id}`
         }).join('&');
 
-        const response = await axiosInstance.get(`/PublicNews/GetSectionNews${queryParams}&OnlyFrontPageNews=true`);
+        const response = await axiosInstance.get(`/PublicNews/GetSectionNews${queryParams}&OnlyFrontPageNews=true`, headers);
         if (response.status !== 200) {
             throw new Error('Error en la petición');
         }
@@ -118,7 +119,7 @@ export const getSearch = async (params?: { NameSearch?: string, PageSize?:number
 
 export const getSocialMediaArticles = async () => {
     try {
-        const response = await axiosInstance.get('/PublicNews/GetSocialMediaArticles');
+        const response = await axiosInstance.get('/PublicNews/GetSocialMediaArticles', headers);
         if (response.status !== 200) {
             throw new Error('Error en la petición');
         }
@@ -156,7 +157,7 @@ export const getAdvertisementShort = async (relevance?: boolean, position?: stri
             queryParams += `&SectionId=${sectionId}`;
         }
         
-        const response = await axiosInstance.get(`/PublicNews/GetAdvertisementShort?OnlyValidAds=true${queryParams}`);
+        const response = await axiosInstance.get(`/PublicNews/GetAdvertisementShort?OnlyValidAds=true${queryParams}`, headers);
         if (response.status !== 200) {
             throw new Error('Error en la petición');
         }

@@ -2,88 +2,123 @@ import { AdvertisementHorizontal, Carousel, LatestArticles, MainArticle, RowSoci
 import { IAdvertisement, IFrontPageLayout, INewsArticle, INewsSection, ISocialMediaArticle } from "@/interfaces";
 import styles from './page.module.scss';
 import { notFound } from "next/navigation";
+import { getAdvertisementShort, getFrontPageLayoutPublished, getNewsSection, getSocialMediaArticles, getUltimateFiveNewsArticleApproved } from "@/services";
+
+// // Obtiene el ForontPageLayout actualmente publicado
+// const getFrontPageLayout = async () => {
+//     try {
+//         // const res = await fetch(`https://sintexto-api-dev.azurewebsites.net/api/FrontPageLayout/UltimateFrontPageLayoutPublished`,{
+//         const res = await fetch(`https://sintexto-api-production.azurewebsites.net/api/FrontPageLayout/UltimateFrontPageLayoutPublished`,{
+//           cache: 'no-store',
+
+//         }).then( resp => resp.json() );
+      
+//         return res.data;
+        
+//       } catch (error) {
+//         notFound();
+//       }
+// }
+
+// // Obtiene las últimas noticias aprobadas
+// const getLatestNews = async () => {
+//     try {
+//         // const res = await fetch(`https://sintexto-api-dev.azurewebsites.net/api/NewsArticle/UltimateFiveNewsArticleApproved`,{
+//         const res = await fetch(`https://sintexto-api-production.azurewebsites.net/api/NewsArticle/UltimateFiveNewsArticleApproved`,{
+//           cache: 'no-store',
+
+//         }).then( resp => resp.json() );
+      
+//         return res.data;
+        
+//       } catch (error) {
+//       return []
+//       }
+// }
+
+// // Obtiene los artículos por cada sección que haya en el FrontPageLayout
+// const getSectionsHome = async (idSections: any) => {
+//     try {
+//         const queryParams = '?' + idSections.map((item: any) => {
+//             return `Sections=${item.id}`
+//         }).join('&');
+//         // const res = await fetch(`https://sintexto-api-dev.azurewebsites.net/api/PublicNews/GetSectionNews${queryParams}&OnlyFrontPageNews=true`,{
+//         const res = await fetch(`https://sintexto-api-production.azurewebsites.net/api/PublicNews/GetSectionNews${queryParams}&OnlyFrontPageNews=true`,{
+//           cache: 'no-store',
+
+//         }).then( resp => resp.json() );
+      
+//         return res.data;
+        
+//       } catch (error) {
+      
+//       }
+// }
+
+// // Obtiene los artículos de las redes sociales
+// const getSocialNetworkArticles = async () => {
+//     try {
+//         // const res = await fetch(`https://sintexto-api-dev.azurewebsites.net/api/PublicNews/GetSocialMediaArticles`,{
+//         const res = await fetch(`https://sintexto-api-production.azurewebsites.net/api/PublicNews/GetSocialMediaArticles`,{
+//           cache: 'no-store',
+//         }).then( resp => resp.json() );
+      
+//         return res.data;
+        
+//       } catch (error) {
+//       return []
+//       }
+// }
+
+// // Obtiene los anuncios
+// const getAdvertisements = async () => {
+//     try {
+//         // const res = await fetch(`https://sintexto-api-dev.azurewebsites.net/api/PublicNews/GetAdvertisementShort?OnlyValidAds=true&position=Carousel`,{
+//         const res = await fetch(`https://sintexto-api-production.azurewebsites.net/api/PublicNews/GetAdvertisementShort?OnlyValidAds=true&position=Carousel`,{
+//           cache: 'no-store',
+
+//         }).then( resp => resp.json() );
+      
+//         return res.data;
+        
+//       } catch (error) {
+//       return []
+//       }
+    
+// }
+
+
+
+
 
 // Obtiene el ForontPageLayout actualmente publicado
 const getFrontPageLayout = async () => {
-    try {
-        // const res = await fetch(`https://sintexto-api-dev.azurewebsites.net/api/FrontPageLayout/UltimateFrontPageLayoutPublished`,{
-        const res = await fetch(`https://sintexto-api-production.azurewebsites.net/api/FrontPageLayout/UltimateFrontPageLayoutPublished`,{
-          cache: 'no-store',
-
-        }).then( resp => resp.json() );
-      
-        return res.data;
-        
-      } catch (error) {
-        notFound();
-      }
+    const response = await getFrontPageLayoutPublished();    
+    return response.data;
 }
 
 // Obtiene las últimas noticias aprobadas
 const getLatestNews = async () => {
-    try {
-        // const res = await fetch(`https://sintexto-api-dev.azurewebsites.net/api/NewsArticle/UltimateFiveNewsArticleApproved`,{
-        const res = await fetch(`https://sintexto-api-production.azurewebsites.net/api/NewsArticle/UltimateFiveNewsArticleApproved`,{
-          cache: 'no-store',
-
-        }).then( resp => resp.json() );
-      
-        return res.data;
-        
-      } catch (error) {
-      return []
-      }
+    const response = await getUltimateFiveNewsArticleApproved();
+    return response.data;
 }
 
 // Obtiene los artículos por cada sección que haya en el FrontPageLayout
 const getSectionsHome = async (idSections: any) => {
-    try {
-        const queryParams = '?' + idSections.map((item: any) => {
-            return `Sections=${item.id}`
-        }).join('&');
-        // const res = await fetch(`https://sintexto-api-dev.azurewebsites.net/api/PublicNews/GetSectionNews${queryParams}&OnlyFrontPageNews=true`,{
-        const res = await fetch(`https://sintexto-api-production.azurewebsites.net/api/PublicNews/GetSectionNews${queryParams}&OnlyFrontPageNews=true`,{
-          cache: 'no-store',
-
-        }).then( resp => resp.json() );
-      
-        return res.data;
-        
-      } catch (error) {
-      
-      }
+    const response = await getNewsSection(idSections);
+    return response.data;
 }
 
 // Obtiene los artículos de las redes sociales
 const getSocialNetworkArticles = async () => {
-    try {
-        // const res = await fetch(`https://sintexto-api-dev.azurewebsites.net/api/PublicNews/GetSocialMediaArticles`,{
-        const res = await fetch(`https://sintexto-api-production.azurewebsites.net/api/PublicNews/GetSocialMediaArticles`,{
-          cache: 'no-store',
-        }).then( resp => resp.json() );
-      
-        return res.data;
-        
-      } catch (error) {
-      return []
-      }
+    const response = await getSocialMediaArticles();
+    return response.data;
 }
 
 // Obtiene los anuncios
 const getAdvertisements = async () => {
-    try {
-        // const res = await fetch(`https://sintexto-api-dev.azurewebsites.net/api/PublicNews/GetAdvertisementShort?OnlyValidAds=true&position=Carousel`,{
-        const res = await fetch(`https://sintexto-api-production.azurewebsites.net/api/PublicNews/GetAdvertisementShort?OnlyValidAds=true&position=Carousel`,{
-          cache: 'no-store',
-
-        }).then( resp => resp.json() );
-      
-        return res.data;
-        
-      } catch (error) {
-      return []
-      }
-    
+    const response = await getAdvertisementShort(undefined, 'Carousel');
+    return response.data;
 }
 
 export default async function HomePage() {

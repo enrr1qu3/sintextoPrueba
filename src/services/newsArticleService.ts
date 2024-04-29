@@ -1,4 +1,5 @@
 import { axiosInstance } from "./axios";
+import { headers } from "./headers-cache";
 
 export const getNewsArticleByIdSection = async (idSection: number) => {
     try {
@@ -26,7 +27,7 @@ export const getNewsArticleById = async (idNewsArticle: number) => {
 
 export const getUltimateFiveNewsArticleApproved = async () => {
     try {
-        const response = await axiosInstance.get('/NewsArticle/UltimateFiveNewsArticleApproved');
+        const response = await axiosInstance.get('/NewsArticle/UltimateFiveNewsArticleApproved', headers);
         if (response.status !== 200) {
             throw new Error('Error en la petición');
         }
