@@ -1,6 +1,8 @@
 import { Programs } from "@/paginas";
 import { getAllLiveStreamSchedule } from "@/services";
 
+export const dynamic = 'force-dynamic';
+
 import { notFound } from "next/navigation";
 
 export const metadata = {
