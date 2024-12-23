@@ -23,7 +23,7 @@ const getPrograms = async () => {
 
 export default async function ProgramasPage() {
     const programs = await getPrograms();
-    
+
     return (
         <Programs programs={ programs } />
     );

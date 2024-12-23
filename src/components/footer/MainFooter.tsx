@@ -46,7 +46,7 @@ export const MainFooter = () => {
         { 
             id: 5,
             icon: <TikTokIcon />,
-            href: 'https://www.tiktok.com/@sintexto_',
+            href: 'https://www.tiktok.com/@sintextonoticias',
         },
     ]
 

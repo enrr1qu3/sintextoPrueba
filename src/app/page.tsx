@@ -1,132 +1,126 @@
 import { AdvertisementHorizontal, Carousel, LatestArticles, MainArticle, RowSocialNetwork, SectionHome } from "@/components";
-import { IAdvertisement, IFrontPageLayout, INewsArticle, INewsSection, ISocialMediaArticle } from "@/interfaces";
+import { IAdvertisement, IAdvertisementsFrontPage, IArticlesBySectionHome, IFrontPageLayout, INewsArticle, INewsSection, ISocialMediaArticle } from "@/interfaces";
 import styles from './page.module.scss';
 import { notFound } from "next/navigation";
-import { getAdvertisementShort, getFrontPageLayoutPublished, getNewsSection, getSocialMediaArticles, getUltimateFiveNewsArticleApproved } from "@/services";
-
-// // Obtiene el ForontPageLayout actualmente publicado
-// const getFrontPageLayout = async () => {
-//     try {
-//         // const res = await fetch(`https://sintexto-api-dev.azurewebsites.net/api/FrontPageLayout/UltimateFrontPageLayoutPublished`,{
-//         const res = await fetch(`https://sintexto-api-production.azurewebsites.net/api/FrontPageLayout/UltimateFrontPageLayoutPublished`,{
-//           cache: 'no-store',
-
-//         }).then( resp => resp.json() );
-      
-//         return res.data;
-        
-//       } catch (error) {
-//         notFound();
-//       }
-// }
-
-// // Obtiene las últimas noticias aprobadas
-// const getLatestNews = async () => {
-//     try {
-//         // const res = await fetch(`https://sintexto-api-dev.azurewebsites.net/api/NewsArticle/UltimateFiveNewsArticleApproved`,{
-//         const res = await fetch(`https://sintexto-api-production.azurewebsites.net/api/NewsArticle/UltimateFiveNewsArticleApproved`,{
-//           cache: 'no-store',
-
-//         }).then( resp => resp.json() );
-      
-//         return res.data;
-        
-//       } catch (error) {
-//       return []
-//       }
-// }
-
-// // Obtiene los artículos por cada sección que haya en el FrontPageLayout
-// const getSectionsHome = async (idSections: any) => {
-//     try {
-//         const queryParams = '?' + idSections.map((item: any) => {
-//             return `Sections=${item.id}`
-//         }).join('&');
-//         // const res = await fetch(`https://sintexto-api-dev.azurewebsites.net/api/PublicNews/GetSectionNews${queryParams}&OnlyFrontPageNews=true`,{
-//         const res = await fetch(`https://sintexto-api-production.azurewebsites.net/api/PublicNews/GetSectionNews${queryParams}&OnlyFrontPageNews=true`,{
-//           cache: 'no-store',
-
-//         }).then( resp => resp.json() );
-      
-//         return res.data;
-        
-//       } catch (error) {
-      
-//       }
-// }
-
-// // Obtiene los artículos de las redes sociales
-// const getSocialNetworkArticles = async () => {
-//     try {
-//         // const res = await fetch(`https://sintexto-api-dev.azurewebsites.net/api/PublicNews/GetSocialMediaArticles`,{
-//         const res = await fetch(`https://sintexto-api-production.azurewebsites.net/api/PublicNews/GetSocialMediaArticles`,{
-//           cache: 'no-store',
-//         }).then( resp => resp.json() );
-      
-//         return res.data;
-        
-//       } catch (error) {
-//       return []
-//       }
-// }
-
-// // Obtiene los anuncios
-// const getAdvertisements = async () => {
-//     try {
-//         // const res = await fetch(`https://sintexto-api-dev.azurewebsites.net/api/PublicNews/GetAdvertisementShort?OnlyValidAds=true&position=Carousel`,{
-//         const res = await fetch(`https://sintexto-api-production.azurewebsites.net/api/PublicNews/GetAdvertisementShort?OnlyValidAds=true&position=Carousel`,{
-//           cache: 'no-store',
-
-//         }).then( resp => resp.json() );
-      
-//         return res.data;
-        
-//       } catch (error) {
-//       return []
-//       }
-    
-// }
-
-
-
-
-
+import { baseUrl } from '../services/global';
 // Obtiene el ForontPageLayout actualmente publicado
 const getFrontPageLayout = async () => {
-    const response = await getFrontPageLayoutPublished();    
-    return response.data;
+    try {
+        // const res = await fetch(`${baseUrl}/FrontPageLayout/UltimateFrontPageLayoutPublished`,{
+        const res = await fetch(`${baseUrl}/FrontPageLayout/UltimateFrontPageLayoutPublished`,{
+          cache: 'no-store',
+
+        }).then( resp => resp.json() );
+      
+        return res.data;
+        
+      } catch (error) {
+        notFound();
+      }
 }
 
 // Obtiene las últimas noticias aprobadas
 const getLatestNews = async () => {
-    const response = await getUltimateFiveNewsArticleApproved();
-    return response.data;
+    try {
+        // const res = await fetch(`${baseUrl}/NewsArticle/UltimateFiveNewsArticleApproved`,{
+        const res = await fetch(`${baseUrl}/NewsArticle/UltimateFiveNewsArticleApproved`,{
+          cache: 'no-store',
+
+        }).then( resp => resp.json() );
+      
+        return res.data;
+        
+      } catch (error) {
+      return []
+      }
 }
 
 // Obtiene los artículos por cada sección que haya en el FrontPageLayout
 const getSectionsHome = async (idSections: any) => {
-    const response = await getNewsSection(idSections);
-    return response.data;
+    try {
+        // const queryParams = '?' + idSections.map((item: any) => {
+        //     return `Sections=${item.id}`
+        // }).join('&');
+        // // const res = await fetch(`${baseUrl}/PublicNews/GetSectionNews${queryParams}&OnlyFrontPageNews=true`,{
+        // const res = await fetch(`${baseUrl}/PublicNews/GetSectionNews${queryParams}&OnlyFrontPageNews=true`,{
+        //   cache: 'no-store',
+
+        // }).then( resp => resp.json() );
+      
+        // return res.data;
+
+        const sections: IArticlesBySectionHome[] = await Promise.all(
+            idSections.map(async (item: any) => {
+
+                const response = await fetch(`${baseUrl}/PublicNews/GetArticlesFilterBySection?SectionName=${item.sectionTitleURL}&PageSize=6&PageNumber=1`, { 
+                    cache: 'no-store' 
+                }).then(resp => resp.json());
+
+                return { ...item, articles: response.data!, currentPage: response.meta.currentPage! }
+            })
+        );
+
+        return sections;
+        
+    } catch (error) {
+        return [];
+    }
 }
 
 // Obtiene los artículos de las redes sociales
 const getSocialNetworkArticles = async () => {
-    const response = await getSocialMediaArticles();
-    return response.data;
+    try {
+        // const res = await fetch(`${baseUrl}/PublicNews/GetSocialMediaArticles`,{
+        const res = await fetch(`${baseUrl}/PublicNews/GetSocialMediaArticles`,{
+          cache: 'no-store',
+        }).then( resp => resp.json() );
+      
+        return res.data;
+        
+      } catch (error) {
+      return []
+      }
 }
 
 // Obtiene los anuncios
 const getAdvertisements = async () => {
-    const response = await getAdvertisementShort(undefined, 'Carousel');
-    return response.data;
+    try {
+        // const res = await fetch(`${baseUrl}/PublicNews/GetAdvertisementShort?OnlyValidAds=true&position=Carousel`,{
+        const res = await fetch(`${baseUrl}/PublicNews/GetAdvertisementShort?OnlyValidAds=true&position=Carousel`,{
+          cache: 'no-store',
+
+        }).then( resp => resp.json() );
+      
+        return res.data;
+        
+      } catch (error) {
+      return []
+      }
+    
+}
+
+// Obtiene los anuncios principales del FrontPage (anuncio principal, anuncio secundario, tercer anuncio)
+const getMainAdvertisements = async () => {
+    try {
+        const response = await fetch(`${baseUrl}/FrontPageLayout/FrontPageLayoutAdversiments`,{
+            cache: 'no-store',
+        }).then( resp => resp.json() );
+      
+        return response.data;
+    }
+    catch (error) {
+        return error;
+    }
 }
 
 export default async function HomePage() {
     const layout: IFrontPageLayout = await getFrontPageLayout(); 
     const socialMediaArticles: ISocialMediaArticle[] = await getSocialNetworkArticles();
     const lastArticles: INewsArticle[] = await getLatestNews();
-    const sections: INewsSection[] = await getSectionsHome(layout.newsSections);
+    // const sections: INewsSection[] = await getSectionsHome(layout.newsSections);
+    const sections: IArticlesBySectionHome[] = await getSectionsHome(layout.newsSections);
     const adsCarousel: IAdvertisement[] = await getAdvertisements();
+    const advertisementsLayout: IAdvertisementsFrontPage = await getMainAdvertisements();
 
     return (
         <>
@@ -140,11 +134,11 @@ export default async function HomePage() {
             
             <div className="container">
                 {
-                    layout?.advertisementMainAdSpace != null && (
+                    advertisementsLayout?.advertisementMainAdSpace != null && (
                         <div className={ styles.firstAdd }>
                             <AdvertisementHorizontal
-                                imageUrl={ layout?.advertisementMainAdSpace.banneUrl! ?? layout?.advertisementMainAdSpace.imagesOfAdvertisements![0].filePathUrl! }
-                                urlToRedirect={ layout?.advertisementMainAdSpace.destinationUrl! }
+                                imageUrl={ advertisementsLayout?.advertisementMainAdSpace.banneUrl! ?? advertisementsLayout?.advertisementMainAdSpace.imagesOfAdvertisements![0].filePathUrl! }
+                                urlToRedirect={ advertisementsLayout?.advertisementMainAdSpace.destinationUrl! }
                             />
                         </div>
                     )
@@ -161,19 +155,21 @@ export default async function HomePage() {
                 {
                     sections?.map((section) => (
                         <SectionHome
-                            key={ section.sectionId }
+                            key={ section.id }
                             sectionTitle={ section.name }
+                            sectionTitleURL={ section.sectionTitleURL }
                             articles={ section.articles }
+                            currentPage={ section.currentPage }
                         />
                     ))
                 }
 
                 {
-                    layout?.twoAdvertisement != null && (
+                    advertisementsLayout?.twoAdvertisement != null && (
                         <div className={ styles.secondAdd }>
                             <AdvertisementHorizontal
-                                imageUrl={ layout?.twoAdvertisement.banneUrl! ?? layout?.twoAdvertisement.imagesOfAdvertisements![0].filePathUrl! }
-                                urlToRedirect={ layout?.twoAdvertisement.destinationUrl! }
+                                imageUrl={ advertisementsLayout?.twoAdvertisement.banneUrl! ?? advertisementsLayout?.twoAdvertisement?.imagesOfAdvertisements![0]?.filePathUrl! }
+                                urlToRedirect={ advertisementsLayout?.twoAdvertisement.destinationUrl! }
                             />
                         </div>
                     )

@@ -8,6 +8,8 @@ export * from './article/INewsArticle';
 export * from './employee/IEmployee' ;
 
 // Home Interfaces
+export * from './home/IAdvertisementsFrontPage';
+export * from './home/IArticlesBySectionHome';
 export * from './home/IFrontPageLayout';
 export * from './home/ISectionHome';
 export * from './home/ISocialMediaArticle';

@@ -16,17 +16,24 @@ import { INewsArticle } from '@/interfaces';
 import { CardArticle } from '..';
 
 import '../../styles/home/_section-home.scss';
+import { getArticlesFilterBySection } from '@/services';
 
 interface ISectionHomeProps {
     sectionTitle?: string;
+    sectionTitleURL?: string;
     articles?: INewsArticle[];
+    currentPage?: number;
 }
 
 export const SectionHome = (props: ISectionHomeProps) => {
-    const { articles, sectionTitle } = props;
+    const { articles, sectionTitle, sectionTitleURL, currentPage } = props;
     const [ swiperRef, setSwiperRef ] = useState<SwiperClass>();
     const [ isBeginning, setIsBeginning ] = useState(true);
-    const [ isEnd, setIsEnd ] = useState(false);
+    const [ isEnd, setIsEnd ] = useState<boolean>(false);
+    // const [ loading, setLoading ] = useState<boolean>(true);
+
+    const [ articlesTemp, setArticlesTemp ] = useState<any>(articles);
+    const [ countCurrentPage, setCountCurrentPage ] = useState(currentPage);
 
     const handleSwiper = (swiper: SwiperClass) => {
         setSwiperRef(swiper);
@@ -42,9 +49,27 @@ export const SectionHome = (props: ISectionHomeProps) => {
         swiperRef?.slidePrev();
     }, [ swiperRef ]);
    
-    const handleNext = useCallback(() => {
+    const handleNext = useCallback(async () => {
         swiperRef?.slideNext();
-    }, [ swiperRef ]);
+
+        // Si el swiper llega al final del elemento
+        if (swiperRef?.isEnd) {
+            // setLoading(true);
+            
+            // Realiza la petición para cargar más artículos
+            const response = await getArticlesFilterBySection({ SectionName: sectionTitleURL, PageSize: 6, PageNumber: countCurrentPage! + 1 });
+
+            // Almacenamos el 'currentPage' del paginado para la próxima petición que se realice
+            setCountCurrentPage(response.meta.currentPage);
+            
+            setArticlesTemp((prevArticles: any) => [ ...prevArticles, ...response.data ]);
+
+            // setLoading(false);
+        }
+
+        // Habilita de nuevo el botón de 'Next' en el swiper
+        setIsEnd(false);
+    }, [ swiperRef, articlesTemp ]);
 
     return (
         <>
@@ -93,7 +118,7 @@ export const SectionHome = (props: ISectionHomeProps) => {
                                     }}
                                 >
                                     {
-                                        articles?.map(article => (
+                                        articlesTemp?.map((article: any) => (
                                             <SwiperSlide key={ article.id }>
                                                 <Col className="col-home-section-article" span={ 24 } key={ article.id }>
                                                     <CardArticle article={ article } />

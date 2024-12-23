@@ -26,6 +26,7 @@ export const ContenVideoImg = ({ articleVI }: { articleVI: MediaArticle }) => {
                     ?
                     <div className="container-video">
                         <ReactPlayer
+                        suppressHydrationWarning
                             url={articleVI.contentVideoURL}
                             controls
                             playing
@@ -35,7 +36,7 @@ export const ContenVideoImg = ({ articleVI }: { articleVI: MediaArticle }) => {
                         />
                     </div>
                     :
-                    <Image
+                    <Image suppressHydrationWarning
                         key={articleVI.id}
                         src={articleVI.articleBannerImageURL}
                         alt={articleVI.title}

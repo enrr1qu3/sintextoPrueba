@@ -13,7 +13,7 @@ export const getNewsSectionById = async (idNewsSection: number) => {
 }
 
 export const getAllNewsSection = async () => {
-    const pageSize = 200;
+    const pageSize = 50;
 
     try {
         const response = await axiosInstance.get(`/NewsSection?IsActive=true&PageSize=${pageSize}`);

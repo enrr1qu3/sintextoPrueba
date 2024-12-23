@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { getAdvertisementShort, getArticleByTitle, getAuthorById, getNewsArticleByIdSection, getNewsSectionById } from "@/services";
+import { getAdvertisementShort, getArticleByTitle, getArticlesFilterBySection, getAuthorById, getNewsArticleByIdSection, getNewsSectionById } from "@/services";
 
 import { notFound } from "next/navigation";
 import { Article } from "@/paginas";
@@ -49,12 +49,16 @@ const getAutorByID = async (id: number) => {
     return []
   }
 }
-const getArticleByIdSection = async (id: number, idArticle: number) => {
+const getArticleByIdSection = async (id: number) => {
   try {
-    const response = await getNewsArticleByIdSection(id);
-    let data = response.data;
-    let articlesFiltered = data.filter((article: any) => article.id != idArticle);
-    return articlesFiltered;
+    const paramsFilter = {
+      PageSize: 6,
+      PageNumber: 1
+    };
+
+    // const response = await getNewsArticleByIdSection(id, paramsFilter);
+    const response = await getArticlesFilterBySection(paramsFilter);
+    return response;
   } catch (error) {
     return []
   }
@@ -68,7 +72,7 @@ const ArticleAdvertisment = async (id: number, posicion:string) => {
 export default async function ArticlePage({ params }: Readonly<Props>) {
   const data = await getArticlesByName(params.id);
   const section = await getSection(data?.newsSectionId);
-  const articleBySeccionId = await getArticleByIdSection(data?.newsSectionId, data.id);
+  const articleBySeccionId = await getArticleByIdSection(section.sectionTitleURL);
   const advertisementVertical = await ArticleAdvertisment(data.newsSectionId, 'Vertical');
   const advertisementHorizontal = await ArticleAdvertisment(data.newsSectionId, 'Horizontal');
   

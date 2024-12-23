@@ -27,8 +27,8 @@ export const Datetime = () => {
     
     return (
         <div className="container-datetime">
-            <Title level={ 5 } className="datetime">{currentTime.format('hh:mm A')}</Title>
-            <Title level={ 5 } className="datetime">{currentDate.format('dddd D [de] MMMM, YYYY').toUpperCase()}</Title>
+            <Title level={ 5 } className="datetime" suppressHydrationWarning>{currentTime.format('hh:mm A')}</Title>
+            <Title level={ 5 } className="datetime" suppressHydrationWarning>{currentDate.format('dddd D [de] MMMM, YYYY').toUpperCase()}</Title>
         </div>
     );
 }

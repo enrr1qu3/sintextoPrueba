@@ -9,11 +9,12 @@ import { ArticleTags } from "@/components/article/ArticleTags";
 import AdvertisementCarousel from "@/components/article/AdvertisementCarousel";
 import { AdvertisementHori } from "@/components/article/AdvertisementHori";
 
-
 export const Article = (props: any) => {
     const { article, section, autorInfo,
         articleBySection, verticalAd, horizontalAD } = props
 
+        // Filtra los artículos para que no aparezca la noticia actual
+        let articlesFiltered = articleBySection.data.filter((value: any) => value.id != article.id);
     return (
         <>
             <TitleSectionHeader title={section.name} color={section.assignedColor} />
@@ -79,7 +80,12 @@ export const Article = (props: any) => {
 
             {/* articulos relacionados */}
             <div className="container" >
-                <SectionHome sectionTitle="Artículos relacionados" articles={articleBySection} />
+                <SectionHome
+                    sectionTitle="Artículos relacionados"
+                    articles={ articlesFiltered }
+                    sectionTitleURL={ section.sectionTitleURL }
+                    currentPage={ articleBySection.meta.currentPage }
+                />
             </div >
         </>
     )
