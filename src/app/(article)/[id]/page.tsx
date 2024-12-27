@@ -282,6 +282,390 @@ export default async function ArticlePage({ params }: Readonly<Props>) {
       Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
       integrarán la Comisión Permanente durante
       el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
+      Al finalizar el Primer Periodo Ordinario de Sesiones del Primer Año de
+      Ejercicio Constitucional, el Congreso local de Tabasco, designó a los legisladores que
+      integrarán la Comisión Permanente durante
+      el receso parlamentario que se extenderá del 16 de diciembre de 2024 al 31 de enero de 2025.
     </>
     // <Article 
     // article={data} 
