@@ -1,6 +1,6 @@
 import { Col, Row } from "antd";
 import { TitleSectionHeader } from "@/components/section/TituloSectionHeader";
-import { CardAutorArticle, ContenVideoImg, SectionHome, SharingButtons } from "@/components";
+import { CardAutorArticle, SectionHome, SharingButtons } from "@/components";
 import { CarruselArticleImage } from "@/components/article/CarruselArticleImage";
 import { TextoArticle } from "@/components/article/TextoArticle";
 
@@ -11,10 +11,10 @@ import { AdvertisementHori } from "@/components/article/AdvertisementHori";
 
 export const Article = (props: any) => {
     const { article, section, autorInfo,
-         verticalAd, horizontalAD } = props
+        articleBySection, verticalAd, horizontalAD } = props
 
-        // Filtra los artículos para que no aparezca la noticia actual
-        // let articlesFiltered = articleBySection.data.filter((value: any) => value.id != article.id);
+    // Filtra los artículos para que no aparezca la noticia actual
+    let articlesFiltered = articleBySection.data.filter((value: any) => value.id != article.id);
     return (
         <>
             <TitleSectionHeader title={section.name} color={section.assignedColor} />
@@ -45,7 +45,7 @@ export const Article = (props: any) => {
 
                                     <h4 className="article-subtitle">{article.subtitle}</h4>
 
-                                    <ContenVideoImg articleVI={article} />
+                                    {/* <ContenVideoImg articleVI={article} /> */}
 
                                     <p className="subtitle-video" key={"imagenes"}>
                                         {article.subtitleVideo}
@@ -79,14 +79,14 @@ export const Article = (props: any) => {
             </Row >
 
             {/* articulos relacionados */}
-            {/* <div className="container" >
+            <div className="container" >
                 <SectionHome
                     sectionTitle="Artículos relacionados"
-                    articles={ articlesFiltered }
-                    sectionTitleURL={ section.sectionTitleURL }
-                    currentPage={ articleBySection.meta.currentPage }
+                    articles={articlesFiltered}
+                    sectionTitleURL={section.sectionTitleURL}
+                    currentPage={articleBySection.meta.currentPage}
                 />
-            </div > */}
+            </div >
         </>
     )
 }
