@@ -17,7 +17,7 @@ export const Article = (props: any) => {
         let articlesFiltered = articleBySection.data.filter((value: any) => value.id != article.id);
     return (
         <>
-            <TitleSectionHeader title={section.name} color={section.assignedColor} />
+            {/* <TitleSectionHeader title={section.name} color={section.assignedColor} /> */}
             <Row className="main-row">
 
                 <Col xs={0} lg={3} xl={4}>

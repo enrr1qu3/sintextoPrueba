@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { getAdvertisementShort, getArticleByTitle, getArticlesFilterBySection, getAuthorById, getNewsArticleByIdSection, getNewsSectionById } from "@/services";
+import { getAdvertisementShort, getArticleByTitle, getArticlesFilterBySection, getAuthorById, getNewsSectionById } from "@/services";
 
 import { notFound } from "next/navigation";
 import { Article } from "@/paginas";
