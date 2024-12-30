@@ -17,13 +17,13 @@ export const Article = (props: any) => {
         let articlesFiltered = articleBySection.data.filter((value: any) => value.id != article.id);
     return (
         <>
-            <TitleSectionHeader title={section.name} color={section.assignedColor} />
+            {/* <TitleSectionHeader title={section.name} color={section.assignedColor} /> */}
             <Row className="main-row">
 
                 <Col xs={0} lg={3} xl={4}>
                     <div className="col-ad-left">
-                        {verticalAd?.length! > 0 && <AdvertisementCarousel advertisementV={verticalAd} numberInitial={0} />}
-                        {verticalAd?.length! > 2 && <AdvertisementCarousel advertisementV={verticalAd} numberInitial={2} />}
+                        {/* {verticalAd?.length! > 0 && <AdvertisementCarousel advertisementV={verticalAd} numberInitial={0} />} */}
+                        {/* {verticalAd?.length! > 2 && <AdvertisementCarousel advertisementV={verticalAd} numberInitial={2} />} */}
                     </div>
                 </Col>
 
@@ -41,27 +41,27 @@ export const Article = (props: any) => {
 
                                     {/* informacion */}
 
-                                    <h2 className="article-title">{article.title}</h2>
+                                    {/* <h2 className="article-title">{article.title}</h2> */}
 
-                                    <h4 className="article-subtitle">{article.subtitle}</h4>
+                                    {/* <h4 className="article-subtitle">{article.subtitle}</h4> */}
 
-                                    <ContenVideoImg articleVI={article} />
+                                    {/* <ContenVideoImg articleVI={article} /> */}
 
                                     <p className="subtitle-video" key={"imagenes"}>
-                                        {article.subtitleVideo}
+                                        {/* {article.subtitleVideo} */}
                                     </p>
 
                                     <TextoArticle texto={article.content} />
                                     {/* informacion fin */}
                                     {
-                                        article.imagesOfArticles?.length > 0 && <CarruselArticleImage imagenesArticle={article.imagesOfArticles} />
+                                        // article.imagesOfArticles?.length > 0 && <CarruselArticleImage imagenesArticle={article.imagesOfArticles} />
                                     }
 
                                     <Col xs={24}>
                                         {/* <ArticleTags tags={article.newsTags} /> */}
                                     </Col>
                                     {/* publicidad horizontal */}
-                                    {horizontalAD?.length > 0 && <AdvertisementHori advertisementH={horizontalAD} />}
+                                    {/* {horizontalAD?.length > 0 && <AdvertisementHori advertisementH={horizontalAD} />} */}
                                     {/* publicidad horizontal */}
                                 </div>
                             </Col>
@@ -71,8 +71,8 @@ export const Article = (props: any) => {
 
                 <Col xs={0} lg={3} xl={4}>
                     <div className="col-ad-right">
-                        {verticalAd?.length! > 1 && <AdvertisementCarousel advertisementV={verticalAd} numberInitial={1} />}
-                        {verticalAd?.length! > 3 && <AdvertisementCarousel advertisementV={verticalAd} numberInitial={3} />}
+                        {/* {verticalAd?.length! > 1 && <AdvertisementCarousel advertisementV={verticalAd} numberInitial={1} />} */}
+                        {/* {verticalAd?.length! > 3 && <AdvertisementCarousel advertisementV={verticalAd} numberInitial={3} />} */}
                     </div>
                 </Col>
 
