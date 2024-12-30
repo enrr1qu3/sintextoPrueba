@@ -33,10 +33,10 @@ export const Article = (props: any) => {
                             <Col xs={24} md={24}>
                                 <div className="container-article">
                                     {/* carta y compartir */}
-                                    <Row gutter={[0, 30]} justify="space-between">
+                                    {/* <Row gutter={[0, 30]} justify="space-between">
                                         <CardAutorArticle authors={autorInfo} fecha={article.schedulePostDate} />
                                         <SharingButtons title={article.title} />
-                                    </Row>
+                                    </Row> */}
                                     {/* carta y compartir fin */}
 
                                     {/* informacion */}
