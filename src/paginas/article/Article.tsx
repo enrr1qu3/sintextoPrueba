@@ -52,9 +52,7 @@ export const Article = (props: any) => {
                                         article.imagesOfArticles?.length > 0 && <CarruselArticleImage imagenesArticle={article.imagesOfArticles} />
                                     }
 
-                                    <Col xs={24}>
-                                        <ArticleTags tags={article.newsTags} />
-                                    </Col>
+
                                     {/* publicidad horizontal */}
                                     {/* publicidad horizontal */}
                                 </div>
