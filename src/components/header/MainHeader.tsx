@@ -51,9 +51,9 @@ export const MainHeader = () => {
                 </Col>
             </Row>
 
-            <Row className="wrap-row-headband">
+            {/* <Row className="wrap-row-headband">
                 <Headband sections={ sections } />
-            </Row>
+            </Row> */}
         </Header>
     );
 }
