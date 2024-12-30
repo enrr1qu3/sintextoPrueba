@@ -80,12 +80,12 @@ export const Article = (props: any) => {
 
             {/* articulos relacionados */}
             <div className="container" >
-                <SectionHome
+                {/* <SectionHome
                     sectionTitle="Artículos relacionados"
                     articles={ articlesFiltered }
                     sectionTitleURL={ section.sectionTitleURL }
                     currentPage={ articleBySection.meta.currentPage }
-                />
+                /> */}
             </div >
         </>
     )
