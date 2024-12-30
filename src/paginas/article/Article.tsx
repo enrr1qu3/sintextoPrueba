@@ -20,12 +20,7 @@ export const Article = (props: any) => {
             {/* <TitleSectionHeader title={section.name} color={section.assignedColor} /> */}
             <Row >
 
-                <Col xs={0} lg={3} xl={4}>
-                    <div >
-                        {verticalAd?.length! > 0 && <AdvertisementCarousel advertisementV={verticalAd} numberInitial={0} />}
-                        {verticalAd?.length! > 2 && <AdvertisementCarousel advertisementV={verticalAd} numberInitial={2} />}
-                    </div>
-                </Col>
+ 
 
                 <Col xs={24} lg={18} xl={16}>
                     <div >
@@ -61,7 +56,6 @@ export const Article = (props: any) => {
                                         <ArticleTags tags={article.newsTags} />
                                     </Col>
                                     {/* publicidad horizontal */}
-                                    {horizontalAD?.length > 0 && <AdvertisementHori advertisementH={horizontalAD} />}
                                     {/* publicidad horizontal */}
                                 </div>
                             </Col>
@@ -69,12 +63,6 @@ export const Article = (props: any) => {
                     </div>
                 </Col>
 
-                <Col xs={0} lg={3} xl={4}>
-                    <div >
-                        {verticalAd?.length! > 1 && <AdvertisementCarousel advertisementV={verticalAd} numberInitial={1} />}
-                        {verticalAd?.length! > 3 && <AdvertisementCarousel advertisementV={verticalAd} numberInitial={3} />}
-                    </div>
-                </Col>
 
             </Row >
 
