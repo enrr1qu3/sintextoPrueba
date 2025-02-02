@@ -6,11 +6,11 @@ import { Article } from "@/paginas";
 import { MainAbout } from "@/components";
 
 interface Props {
-  params: { id: string };
+  params: { articuloID: string };
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const response = await getArticleByTitle(params.id);
+  const response = await getArticleByTitle(params.articuloID);
 
   return {
     title: (response != null) ? response?.title : "SINTEXTO NOTICIAS",
@@ -68,9 +68,28 @@ const ArticleAdvertisment = async (id: number, posicion: string) => {
   const response = await getAdvertisementShort(false, posicion, id);
   return response.data;
 }
-
 export default async function ArticlePage({ params }: Readonly<Props>) {
-  return (
-    <MainAbout />
-  )
+
+    const data = await getArticlesByName(params.articuloID);
+    const section = await getSection(data?.newsSectionId);
+    const articleBySeccionId = await getArticleByIdSection(section.sectionTitleURL);
+    const advertisementVertical = await ArticleAdvertisment(data.newsSectionId, 'Vertical');
+    const advertisementHorizontal = await ArticleAdvertisment(data.newsSectionId, 'Horizontal');
+
+    let autorInfo = undefined;
+    if (data.authors.length > 0) {
+        autorInfo = await getAutorByID(data?.authors[0].authorId);
+    }
+
+    return (
+        // <MainAbout />
+        <Article
+            article={data}
+            section={section}
+            autorInfo={autorInfo}
+            articleBySection={articleBySeccionId}
+            verticalAd={advertisementVertical}
+            horizontalAD={advertisementHorizontal}
+        />
+    )
 }
