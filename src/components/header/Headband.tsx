@@ -28,8 +28,8 @@ export const Headband = (props: IHeadbandProps) => {
                             key={ section.id }
                             href={
                                 section.name == 'Programas' 
-                                ? '/programas'
-                                : `/seccion/${section.sectionTitleURL}`
+                                ? '/programas/'
+                                : `/seccion/${section.sectionTitleURL}/`
                             }
                         >
                             { section.name }
