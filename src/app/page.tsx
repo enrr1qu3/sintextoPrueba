@@ -1,5 +1,5 @@
 import { AdvertisementHorizontal, Carousel, LatestArticles, MainArticle, RowSocialNetwork, SectionHome } from "@/components";
-import { IAdvertisement, IAdvertisementsFrontPage, IArticlesBySectionHome, IFrontPageLayout, INewsArticle, INewsSection, ISocialMediaArticle } from "@/interfaces";
+import { IAdvertisement, IAdvertisementsFrontPage, IArticlesBySectionHome, IFrontPageLayout, INewsArticle, /*INewsSection,*/ ISocialMediaArticle } from "@/interfaces";
 import styles from './page.module.scss';
 import { notFound } from "next/navigation";
 import { baseUrl } from '../services/global';
