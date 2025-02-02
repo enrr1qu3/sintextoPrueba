@@ -80,7 +80,7 @@ export default async function ArticlePage({ params }: Readonly<Props>) {
     autorInfo = await getAutorByID(data?.authors[0].authorId);
   }
   return (
-    <div>
+    <div style={{width:"100vw", height:"100vh"}}>
       <Article
         article={data}
         section={section}
