@@ -37,8 +37,6 @@ export default async function SectionPage({ params }: Props) {
     articles: articulos,
   }
   return (
-    <>
       <ArticlesBySection data={informacion} typo="section" />
-    </>
   )
 }

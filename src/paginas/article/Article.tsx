@@ -1,3 +1,5 @@
+'use client'
+import { useEffect } from "react";
 import { Col, Row } from "antd";
 import { TitleSectionHeader } from "@/components/section/TituloSectionHeader";
 import { CardAutorArticle, ContenVideoImg, SectionHome, SharingButtons } from "@/components";
@@ -8,13 +10,25 @@ import "@/styles/article/_article.scss"
 import { ArticleTags } from "@/components/article/ArticleTags";
 import AdvertisementCarousel from "@/components/article/AdvertisementCarousel";
 import { AdvertisementHori } from "@/components/article/AdvertisementHori";
+import { WhatsAppOutlined } from "@ant-design/icons";
 
 export const Article = (props: any) => {
     const { article, section, autorInfo,
         articleBySection, verticalAd, horizontalAD } = props
+        useEffect(() => {
+            const handleScroll = () => {
+                console.log("Scroll position:", window.scrollY);
+            };
+    
+            window.addEventListener("scroll", handleScroll);
+    
+            return () => {
+                window.removeEventListener("scroll", handleScroll);
+            };
+        }, []);
 
-        // Filtra los artículos para que no aparezca la noticia actual
-        let articlesFiltered = articleBySection.data.filter((value: any) => value.id != article.id);
+    // Filtra los artículos para que no aparezca la noticia actual
+    let articlesFiltered = articleBySection.data.filter((value: any) => value.id != article.id);
     return (
         <>
             <TitleSectionHeader title={section.name} color={section.assignedColor} />
@@ -60,6 +74,17 @@ export const Article = (props: any) => {
                                     <Col xs={24}>
                                         <ArticleTags tags={article.newsTags} />
                                     </Col>
+                                    <Col xs={24}>
+                                        <h5
+                                            style={{ fontFamily: "sans-serif", fontStyle: "italic", fontSize: 20, fontWeight: "lighter" }}
+                                        >   Únete a nuestro canal de WhatsApp
+                                        <br/>
+                                            Entérate desde tu teléfono de todas las
+                                            noticias dando clic aquí 👉🏻 <a href="https://whatsapp.com/channel/0029VaFPfbFC1FuHd9Ifx02X" >
+                                                <span style={{ fontWeight: "700", textDecorationLine: "underline" }} >Únete a nuestro canal <WhatsAppOutlined /></span>
+                                            </a>
+                                        </h5>
+                                    </Col>
                                     {/* publicidad horizontal */}
                                     {horizontalAD?.length > 0 && <AdvertisementHori advertisementH={horizontalAD} />}
                                     {/* publicidad horizontal */}
@@ -82,9 +107,9 @@ export const Article = (props: any) => {
             <div className="container" >
                 <SectionHome
                     sectionTitle="Artículos relacionados"
-                    articles={ articlesFiltered }
-                    sectionTitleURL={ section.sectionTitleURL }
-                    currentPage={ articleBySection.meta.currentPage }
+                    articles={articlesFiltered}
+                    sectionTitleURL={section.sectionTitleURL}
+                    currentPage={articleBySection.meta.currentPage}
                 />
             </div >
         </>

@@ -8,7 +8,7 @@ interface Props {
   params: { id: string };
 }
 
-export async function generateMetadata({ params }: Props ): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const response = await getArticleByTitle(params.id);
 
   return {
@@ -17,8 +17,8 @@ export async function generateMetadata({ params }: Props ): Promise<Metadata> {
     openGraph: {
       title: (response != null) ? response?.title : "SINTEXTO NOTICIAS",
       description: (response != null) ? response?.subtitle : "ARTICULO DE SINTEXTO NOTICIAS",
-      images: [ response?.articleBannerImageURL],
-      type: "article",  
+      images: [response?.articleBannerImageURL],
+      type: "article",
       // url:`https://sintexto.com/article/${params.id}`
     },
   }
@@ -49,24 +49,23 @@ const getAutorByID = async (id: number) => {
     return []
   }
 }
-const getArticleByIdSection = async (id: number) => {
+const getArticleByIdSection = async (id: string) => {
   try {
     const paramsFilter = {
+      SectionName: id,
       PageSize: 6,
       PageNumber: 1
     };
-
-    // const response = await getNewsArticleByIdSection(id, paramsFilter);
     const response = await getArticlesFilterBySection(paramsFilter);
     return response;
   } catch (error) {
     return []
   }
 }
-const ArticleAdvertisment = async (id: number, posicion:string) => {
+const ArticleAdvertisment = async (id: number, posicion: string) => {
 
-    const response = await getAdvertisementShort(false, posicion, id);
-    return response.data;
+  const response = await getAdvertisementShort(false, posicion, id);
+  return response.data;
 }
 
 export default async function ArticlePage({ params }: Readonly<Props>) {
@@ -75,19 +74,19 @@ export default async function ArticlePage({ params }: Readonly<Props>) {
   const articleBySeccionId = await getArticleByIdSection(section.sectionTitleURL);
   const advertisementVertical = await ArticleAdvertisment(data.newsSectionId, 'Vertical');
   const advertisementHorizontal = await ArticleAdvertisment(data.newsSectionId, 'Horizontal');
-  
+
   let autorInfo = undefined;
   if (data.authors.length > 0) {
     autorInfo = await getAutorByID(data?.authors[0].authorId);
   }
   return (
-    <Article 
-    article={data} 
-    section={section} 
-    autorInfo={autorInfo} 
-    articleBySection={articleBySeccionId} 
-    verticalAd={advertisementVertical} 
-    horizontalAD={advertisementHorizontal}
+    <Article
+      article={data}
+      section={section}
+      autorInfo={autorInfo}
+      articleBySection={articleBySeccionId}
+      verticalAd={advertisementVertical}
+      horizontalAD={advertisementHorizontal}
     />
   )
 }
