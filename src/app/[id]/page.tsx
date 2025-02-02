@@ -3,6 +3,7 @@ import { getAdvertisementShort, getArticleByTitle, getArticlesFilterBySection, g
 
 import { notFound } from "next/navigation";
 import { Article } from "@/paginas";
+import { MainAbout } from "@/components";
 
 interface Props {
   params: { id: string };
@@ -80,14 +81,14 @@ export default async function ArticlePage({ params }: Readonly<Props>) {
     autorInfo = await getAutorByID(data?.authors[0].authorId);
   }
   return (
-    
-      <Article
-        article={data}
-        section={section}
-        autorInfo={autorInfo}
-        articleBySection={articleBySeccionId}
-        verticalAd={advertisementVertical}
-        horizontalAD={advertisementHorizontal}
-      />
+    <MainAbout />
+      // <Article
+      //   article={data}
+      //   section={section}
+      //   autorInfo={autorInfo}
+      //   articleBySection={articleBySeccionId}
+      //   verticalAd={advertisementVertical}
+      //   horizontalAD={advertisementHorizontal}
+      // />
   )
 }
