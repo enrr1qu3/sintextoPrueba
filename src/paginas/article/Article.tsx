@@ -31,13 +31,13 @@ export const Article = (props: any) => {
     let articlesFiltered = articleBySection.data.filter((value: any) => value.id != article.id);
     return (
         <>
-            <TitleSectionHeader title={section.name} color={section.assignedColor} />
+            {/* <TitleSectionHeader title={section.name} color={section.assignedColor} /> */}
             <Row className="main-row">
 
                 <Col xs={0} lg={3} xl={4}>
                     <div className="col-ad-left">
-                        {verticalAd?.length! > 0 && <AdvertisementCarousel advertisementV={verticalAd} numberInitial={0} />}
-                        {verticalAd?.length! > 2 && <AdvertisementCarousel advertisementV={verticalAd} numberInitial={2} />}
+                        {/* {verticalAd?.length! > 0 && <AdvertisementCarousel advertisementV={verticalAd} numberInitial={0} />} */}
+                        {/* {verticalAd?.length! > 2 && <AdvertisementCarousel advertisementV={verticalAd} numberInitial={2} />} */}
                     </div>
                 </Col>
 
@@ -48,31 +48,35 @@ export const Article = (props: any) => {
                                 <div className="container-article">
                                     {/* carta y compartir */}
                                     <Row gutter={[0, 30]} justify="space-between">
-                                        <CardAutorArticle authors={autorInfo} fecha={article.schedulePostDate} />
-                                        <SharingButtons title={article.title} />
+                                        {/* <CardAutorArticle authors={autorInfo} fecha={article.schedulePostDate} /> */}
+                                        {/* <SharingButtons title={article.title} /> */}
                                     </Row>
                                     {/* carta y compartir fin */}
 
                                     {/* informacion */}
 
-                                    <h2 className="article-title">{article.title}</h2>
+                                    <h2 className="article-title">
+                                        {/* {article.title} */}
+                                        </h2>
 
-                                    <h4 className="article-subtitle">{article.subtitle}</h4>
+                                    <h4 className="article-subtitle">
+                                        {/* {article.subtitle} */}
+                                        </h4>
 
                                     {/* <ContenVideoImg articleVI={article} /> */}
 
                                     <p className="subtitle-video" key={"imagenes"}>
-                                        {article.subtitleVideo}
+                                        {/* {article.subtitleVideo} */}
                                     </p>
 
                                     <TextoArticle texto={article.content} />
                                     {/* informacion fin */}
-                                    {
+                                    {/* {
                                         article.imagesOfArticles?.length > 0 && <CarruselArticleImage imagenesArticle={article.imagesOfArticles} />
-                                    }
+                                    } */}
 
                                     <Col xs={24}>
-                                        <ArticleTags tags={article.newsTags} />
+                                        {/* <ArticleTags tags={article.newsTags} /> */}
                                     </Col>
                                     <Col xs={24}>
                                         <h5
@@ -86,7 +90,7 @@ export const Article = (props: any) => {
                                         </h5>
                                     </Col>
                                     {/* publicidad horizontal */}
-                                    {horizontalAD?.length > 0 && <AdvertisementHori advertisementH={horizontalAD} />}
+                                    {/* {horizontalAD?.length > 0 && <AdvertisementHori advertisementH={horizontalAD} />} */}
                                     {/* publicidad horizontal */}
                                 </div>
                             </Col>
@@ -96,8 +100,8 @@ export const Article = (props: any) => {
 
                 <Col xs={0} lg={3} xl={4}>
                     <div className="col-ad-right">
-                        {verticalAd?.length! > 1 && <AdvertisementCarousel advertisementV={verticalAd} numberInitial={1} />}
-                        {verticalAd?.length! > 3 && <AdvertisementCarousel advertisementV={verticalAd} numberInitial={3} />}
+                        {/* {verticalAd?.length! > 1 && <AdvertisementCarousel advertisementV={verticalAd} numberInitial={1} />}
+                        {verticalAd?.length! > 3 && <AdvertisementCarousel advertisementV={verticalAd} numberInitial={3} />} */}
                     </div>
                 </Col>
 
@@ -105,12 +109,12 @@ export const Article = (props: any) => {
 
             {/* articulos relacionados */}
             <div className="container" >
-                <SectionHome
+                {/* <SectionHome
                     sectionTitle="Artículos relacionados"
                     articles={articlesFiltered}
                     sectionTitleURL={section.sectionTitleURL}
                     currentPage={articleBySection.meta.currentPage}
-                />
+                /> */}
             </div >
         </>
     )
