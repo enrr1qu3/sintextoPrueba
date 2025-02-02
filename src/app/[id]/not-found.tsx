@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Button, Result } from 'antd';
-import '../../../styles/not-found/_not-found.scss';
+import '../../styles/not-found/_not-found.scss';
 
 export default function NotFound() {
     
