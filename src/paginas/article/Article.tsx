@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import { Col, Row } from "antd";
 import { TitleSectionHeader } from "@/components/section/TituloSectionHeader";
-import { CardAutorArticle, ContenVideoImg, SectionHome, SharingButtons } from "@/components";
+import { CardAutorArticle, /*ContenVideoImg,*/ SectionHome, SharingButtons } from "@/components";
 import { CarruselArticleImage } from "@/components/article/CarruselArticleImage";
 import { TextoArticle } from "@/components/article/TextoArticle";
 
@@ -59,7 +59,7 @@ export const Article = (props: any) => {
 
                                     <h4 className="article-subtitle">{article.subtitle}</h4>
 
-                                    <ContenVideoImg articleVI={article} />
+                                    {/* <ContenVideoImg articleVI={article} /> */}
 
                                     <p className="subtitle-video" key={"imagenes"}>
                                         {article.subtitleVideo}
