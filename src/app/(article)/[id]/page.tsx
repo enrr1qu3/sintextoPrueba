@@ -80,13 +80,15 @@ export default async function ArticlePage({ params }: Readonly<Props>) {
     autorInfo = await getAutorByID(data?.authors[0].authorId);
   }
   return (
-    <Article
-      article={data}
-      section={section}
-      autorInfo={autorInfo}
-      articleBySection={articleBySeccionId}
-      verticalAd={advertisementVertical}
-      horizontalAD={advertisementHorizontal}
-    />
+    <div>
+      <Article
+        article={data}
+        section={section}
+        autorInfo={autorInfo}
+        articleBySection={articleBySeccionId}
+        verticalAd={advertisementVertical}
+        horizontalAD={advertisementHorizontal}
+      />
+    </div>
   )
 }
