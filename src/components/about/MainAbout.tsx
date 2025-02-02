@@ -11,11 +11,11 @@ export const MainAbout = () => {
     const router = useRouter();
 
     const titleTabs = [
+        { id: '5', name: 'Política de privacidad', urlPath: '/nosotros/politica-de-privacidad' },
         { id: '1', name: 'Quiénes somos', urlPath: '/nosotros/quienes-somos' },
         { id: '2', name: 'Misión', urlPath: '/nosotros/mision' },
         { id: '3', name: 'Visión', urlPath: '/nosotros/vision' },
         { id: '4', name: 'Valores', urlPath: '/nosotros/valores' },
-        { id: '5', name: 'Política de privacidad', urlPath: '/nosotros/politica-de-privacidad' },
         { id: '6', name: 'Contacto', urlPath: '/nosotros/contacto' },
     ];
 
