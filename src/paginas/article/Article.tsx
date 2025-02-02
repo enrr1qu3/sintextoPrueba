@@ -19,20 +19,20 @@ export const Article = (props: any) => {
     return (
         <>
             <TitleSectionHeader title={section.name} color={section.assignedColor} />
-            <Row className="main-row">
+            <Row >
 
                 <Col xs={0} lg={3} xl={4}>
-                    <div className="col-ad-left">
+                    <div >
                         {verticalAd?.length! > 0 && <AdvertisementCarousel advertisementV={verticalAd} numberInitial={0} />}
                         {verticalAd?.length! > 2 && <AdvertisementCarousel advertisementV={verticalAd} numberInitial={2} />}
                     </div>
                 </Col>
 
                 <Col xs={24} lg={18} xl={16}>
-                    <div className="container">
+                    <div >
                         <Row>
                             <Col xs={24} md={24}>
-                                <div className="container-article">
+                                <div >
                                     {/* carta y compartir */}
                                     <Row gutter={[0, 30]} justify="space-between">
                                         <CardAutorArticle authors={autorInfo} fecha={article.schedulePostDate} />
@@ -42,13 +42,13 @@ export const Article = (props: any) => {
 
                                     {/* informacion */}
 
-                                    <h2 className="article-title">{article.title}</h2>
+                                    <h2 >{article.title}</h2>
 
-                                    <h4 className="article-subtitle">{article.subtitle}</h4>
+                                    <h4 >{article.subtitle}</h4>
 
                                     <ContenVideoImg articleVI={article} />
 
-                                    <p className="subtitle-video" key={"imagenes"}>
+                                    <p  key={"imagenes"}>
                                         {article.subtitleVideo}
                                     </p>
 
@@ -82,7 +82,7 @@ export const Article = (props: any) => {
                 </Col>
 
                 <Col xs={0} lg={3} xl={4}>
-                    <div className="col-ad-right">
+                    <div >
                         {verticalAd?.length! > 1 && <AdvertisementCarousel advertisementV={verticalAd} numberInitial={1} />}
                         {verticalAd?.length! > 3 && <AdvertisementCarousel advertisementV={verticalAd} numberInitial={3} />}
                     </div>
@@ -91,7 +91,7 @@ export const Article = (props: any) => {
             </Row >
 
             {/* articulos relacionados */}
-            <div className="container" >
+            <div  >
                 <SectionHome
                     sectionTitle="Artículos relacionados"
                     articles={articlesFiltered}
